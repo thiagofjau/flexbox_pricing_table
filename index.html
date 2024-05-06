@@ -80,12 +80,17 @@
 
     /*responsividade*/
     @media (max-width: 1080px) {
+      html {
+        flex-direction: row; /*alinhou centro colunas mobile*/
+      }
+
       .pricing-container {
         flex-direction: column;
 
         /*coluna mobile*/
-        padding: 90px;
-        min-width: 320px;
+        padding: 30px;
+        min-width: 350px;
+        max-width: fit-content;
       }
 
       .pricing-plan {
