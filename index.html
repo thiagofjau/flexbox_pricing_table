@@ -81,21 +81,43 @@
     /*responsividade*/
     @media (max-width: 1080px) {
       html {
-        flex-direction: row; /*alinhou centro colunas mobile*/
+        flex-direction: row;
+        /*alinhou centro colunas mobile*/
       }
 
       .pricing-container {
         flex-direction: column;
-
         /*coluna mobile*/
         padding: 30px;
         min-width: 350px;
         max-width: fit-content;
+        padding: 30px 30px 30px 30px;
+      }
+      .plan-title{
+        font-size: 3.3rem;
+      }
+
+      .plan-price {
+        font-size: 5.3rem;
+        font-weight: bolder;
+        padding-top: 10px;
+        text-align: center;
       }
 
       .pricing-plan {
         flex-basis: 100px;
+        min-height: 560px;
+        min-width: 720px;
       }
+      .pricing-plan>.plan-button {
+      border-radius: 15px;
+      flex-basis: 63px;
+      width: 125px;
+      font-size: 1.5rem;
+    }
+    ul{
+      font-size: 2rem;
+    }
     }
   </style>
 </head>
